@@ -4,7 +4,7 @@ module.exports = {
 
   schema: {
     type: 'object',
-    // required: ['name', 'type'],
+    required: ['name', 'type'],
     properties: {
       id: {type: 'integer'},
       name: {type: 'string', minLength: 5, maxLength: 50},
