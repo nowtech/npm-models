@@ -1,0 +1,16 @@
+{
+  "name": "tw-cloud-models",
+  "version": "1.0.21",
+  "description": "tw cloud models",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "tourwriter",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.17.0"
+  }
+}
