@@ -23,7 +23,7 @@ module.exports = {
       type: 'hasMany',
       class: 'locations',
       join: {
-        from: 'locations.supplierId',
+        from: 'locations.suppliers_id',
         to: 'suppliers.id'
       }
     }
