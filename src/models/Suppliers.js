@@ -8,13 +8,12 @@ module.exports = {
     properties: {
       id: {type: 'integer'},
       name: {type: 'string', minLength: 5, maxLength: 50},
-      type: {type: 'string'},
-      descriptionQuote: {type: 'string'},
-      emailReservations: {type: 'string'},
-      primaryContactId: {type: 'string'},
-      phoneReservations: {type: 'string'},
-      amenities: {type: 'array'},
-      organisationId: {type: 'string'},
+      type: {type: 'string', pattern: '\b(accomodation|activity|flight|transfer|rental car)\b'},
+      descQuote: {type: 'string'},
+      emailRes: {type: 'string', format:'email'},
+      phoneRes: {type: 'string'},
+      amenities: {type: 'array', uniqueItems: true, items: { type: 'string' }},
+      organisations_id: {type: 'integer'},
       ratingIndustry: {type: 'number'}
     }
   },
